@@ -3,9 +3,12 @@
     "description": "",
     "version": "0.0.1",
     "main": "./node-web-server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
     "author": {
-        "name": "micha",
-        "email": "you@email.example"
+        "name": "Mike Carolan",
+        "email": "mcarolan@inetfrontier.com"
     },
     "keywords": [],
     "licenses": {
