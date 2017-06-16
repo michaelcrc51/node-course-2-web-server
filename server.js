@@ -66,7 +66,7 @@ app.get('/about', (req, res) => {
 
 app.get('/bad', (req, res) => {
     res.send({
-        message: 'Sorry, your request can\'t be processed at this time'
+        message: 'Sorry, your request can\'t be processed at this time.'
     });
 });
 app.listen(port, () => {
