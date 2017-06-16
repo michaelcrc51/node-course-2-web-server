@@ -22,12 +22,14 @@ app.use((req, res, next) => {
     next();
 });
 
-app.use((req, res, next) => {
-   res.render('maintenance.hbs', {
-       pageTitle: 'We will be back shortly!.',
-       pageBody: 'We are currently doing maintenance on our site - please try again soon.'
-   }) ;
-});
+//The following code puts the site in maint. mode
+//
+//app.use((req, res, next) => {
+//   res.render('maintenance.hbs', {
+//       pageTitle: 'We will be back shortly!.',
+//       pageBody: 'We are currently doing maintenance on our site - please try again soon.'
+//   }) ;
+//});
 
 app.use(express.static(__dirname + '/public'));
 //
@@ -62,6 +64,13 @@ app.get('/about', (req, res) => {
    res.render('about.hbs', {
        pageTitle: 'About Page'
    }); 
+});
+
+app.get('/projects', (req, res) => {
+   res.render('projects.hbs', {
+       pageTitle: 'Welcome to the projects page!.',
+       pageBody: 'Here, you can find a portfolio of the projects I\'ve been working on!' 
+   }) ;
 });
 
 app.get('/bad', (req, res) => {
