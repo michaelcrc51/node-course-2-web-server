@@ -1,0 +1,25 @@
+{
+    "name": "node-web-server",
+    "description": "",
+    "version": "0.0.1",
+    "main": "./node-web-server.js",
+    "author": {
+        "name": "micha",
+        "email": "you@email.example"
+    },
+    "keywords": [],
+    "licenses": {
+        "type": "none"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/YOUR_LOGIN/node-web-server.git"
+    },
+    "bugs": {
+        "url": "http://github.com/YOUR_LOGIN/node-web-server/issues"
+    },
+    "dependencies": {
+        "express": "^4.15.3",
+        "hbs": "^4.0.1"
+    }
+}
